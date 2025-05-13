@@ -2,37 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Remove Blank Lines - Online Text Cleanup Tool</title>
-  <meta name="description" content="Quickly remove blank lines from your text online. Fast, free, and easy-to-use tool for writers, coders, students, and anyone cleaning up copy/paste text.">
-  <meta name="keywords" content="remove blank lines, text cleanup, online text tool, delete empty lines, formatting text, copy paste cleanup">
-  <meta name="author" content="suryanshrjoshi">
-  <meta name="google-site-verification" content="Hi9zE8UN2JkyxoGhfkPAyYh7KSpXPlhza3-LNCgY8mQ" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Text Cleanup Tool</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Text Cleanup Tool</h1>
-    <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+  <h1>Text Cleanup Tool</h1>
 
-    <div class="buttons">
-      <button onclick="removeLineBreaks()">Remove Line Breaks</button>
-      <button onclick="removeExtraSpaces()">Remove Extra Spaces</button>
-      <button onclick="convertToLower()">Lowercase</button>
-      <button onclick="convertToUpper()">Uppercase</button>
-      <button onclick="convertToSentence()">Sentence Case</button>
-      <button onclick="copyText()">Copy Cleaned Text</button>
-    </div>
+  <label for="inputText">Enter Text:</label><br>
+  <textarea id="inputText" rows="10" cols="60" placeholder="Paste your text here..."></textarea>
+  <br><br>
 
-    <textarea id="outputText" placeholder="Your cleaned text will appear here..." readonly></textarea>
-  </div>
+  <button onclick="removeBlankLines()">🧹 Remove Blank Lines</button>
+  <button onclick="clearText()">❌ Clear</button>
 
+  <h2>Cleaned Output:</h2>
+  <textarea id="outputText" rows="10" cols="60" readonly></textarea>
+
+  <footer>
+    <p><a href="about.html">About</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+
+  <!-- Link to JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
-<footer>
-  <p><a href="privacy-policy.html">Privacy Policy</a></p>
-  <p><a href="about.html">About</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
-</footer>
-
